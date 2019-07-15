@@ -199,18 +199,39 @@ aside {
 	color: #8d8f92;
 }
 
-ul.about-social li {
-	display: inline-block;
+ul.about-social {
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
+	width: 305px;
 }
  
 
  a.about-social {
-	display: inline-block;
+ 	display: block;
 	width: 60px;
     height: 60px;
     background-color: #c8cdd0;
-    text-decoration: none;
-    margin-right: -2px;
+    margin-right: 1px;
+}
 
+a.about-social-fb {
+	background: #c8cdd0 url('images/social-fb.png') no-repeat 50% 50%;
+}
+
+a.about-social-tw {
+	background: #c8cdd0 url('images/social-tw.png') no-repeat 50% 50%;
+}
+a.about-social-gl {
+	background: #c8cdd0 url('images/social-gl.png') no-repeat 50% 50%;
+}
+a.about-social-db {
+	background: #c8cdd0 url('images/social-db.png') no-repeat 50% 50%;
+}
+a.about-social-be {
+	background: #c8cdd0 url('images/social-be.png') no-repeat 50% 50%;
+}
+
+a.about-social:hover {
+	background-color: #d0d5d9;
 }
