@@ -21,7 +21,7 @@ h1, h2, h3, p, ul, li {
 
 .container {
 
-max-width: 1170px;
+max-width: 1140px;
 margin: 0 auto;
 }
 
@@ -260,7 +260,7 @@ a.about-social:hover {
 
 
 .team-flex {
-	width: 1140px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -360,6 +360,7 @@ a.about-social:hover {
 	padding-top: 80px;
 	padding-bottom: 60px;
 	background-color: #3a454d;
+	width: 100%;
 }
 
 .work h2 {
@@ -378,7 +379,7 @@ a.about-social:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	align-content: space-between; 
-	width: 1140px;
+	width: 100%;
 	height: 560px;
 	margin-bottom: 60px;
 }
@@ -439,8 +440,7 @@ opacity: 0.4;
 	text-transform: uppercase;
 	padding-top: 14px;
 	padding-bottom: 14px;
-	padding-left: 20px;
-	padding-right: 30px;
+	text-align: center;
 	display: block;
 	width: 170px;
 	margin: 0 auto;
@@ -471,7 +471,7 @@ opacity: 0.4;
 }
 
 .service-flex {
-	width: 1140px;
+	width: 100%;
 	height:510px;
 	display: flex;
 	flex-wrap: wrap;
@@ -523,7 +523,7 @@ opacity: 0.4;
 }
 
 .feature-flex {
-	width: 1140px;
+	width: 100%;
 	height: 435px;
 	display: flex;
 	flex-direction: row;
@@ -620,7 +620,7 @@ color: #8d8f92;
 aside.form {
 	position: absolute;
 	bottom: 90px;
-	left: 700px;
+	right: 70px;
 	background-color: #fff;
 	width: 555px;
 	height: 380px;
