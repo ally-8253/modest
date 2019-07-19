@@ -4,11 +4,16 @@
 	<meta charset="utf-8">
     <title>Modest</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
 </head>
 <body>
 	
-		<header>
+		<header id="fix-header">
 			<div class="container">
 				<div class="header-flex">
 		            <div class="logo">
@@ -32,14 +37,23 @@
 
 
 	<section class="intro">
-			<div class="container">
+			
+            
 
+<div class="slider">
+  <div class="slide"><img src="images/slide1.jpg"></div>
+  <div class="slide"><img src="images/slide2.jpg"></div>
+  <div class="slide"><img src="images/slide3.jpg"></div>
+</div>
+
+<div class="container">
 			<div class="intro-text">
 				<h1>Welcome to our marketplace</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor <br />non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
 				<a href="#" class="btn">View more</a>
 				<a href="#" class="btn">Video tour</a>
 			</div>
+
 
 		</div>
 	</section>
@@ -56,13 +70,13 @@
 		  	<div>
 		  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at. </p>
 			<p>Phasellus sollicitudin ante eros ornare, <strong>sit amet luctus lorem semper</strong>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
-			<ul class="about-social">
-				<li><a href="#" class="about-social about-social-fb"></a></li>
-				<li><a href="#" class="about-social about-social-tw"></a></li>
-				<li><a href="#" class="about-social about-social-gl"></a></li>
-				<li><a href="#" class="about-social about-social-db"></a></li>
-				<li><a href="#" class="about-social about-social-be"></a></li>
-			</ul>
+			<div class="about-social">
+				<a href="#" class="about-social about-social-fb"></a>
+				<a href="#" class="about-social about-social-tw"></a>
+				<a href="#" class="about-social about-social-gl"></a>
+				<a href="#" class="about-social about-social-db"></a>
+				<a href="#" class="about-social about-social-be"></a>
+			</div>
 			</div>
 			<aside>
 				<div class="aside-item">
@@ -305,7 +319,9 @@
     	<div class="container">
     	<h2>Stay in touch.</h2>
     </div>
-    	<div class="map"></div>
+    	<div class="map-responsive">
+    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187123.27297995618!2d74.45177469975332!3d42.87704126977527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dc91b3c881%3A0x492ebaf57cdee27d!2z0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1563463182301!5m2!1sru!2skg" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    	</div>
     	<div class="container">
     	<div class="info">
     		<h3>Contact information</h3>
@@ -357,7 +373,9 @@
 			</div>
     	</div>
     </div>
-           </footer>
-
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -33,6 +33,11 @@ header {
 	background-color: #1d2126;
 	}
 
+#fix-header {
+	position: fixed;
+	z-index: 100;
+}
+
 .header-flex {
 	display: flex;
 	flex-direction: row;
@@ -79,14 +84,18 @@ nav a.active {
 	background-color: : #3a454d;
 	width: 100%;
 	height: 100vh;
-	background-image: url("images/intro.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	
 		
+}
+
+.inro .container {
+	position: relative;
 }
 
 .intro-text {
 	padding-top: 224px;
+	position: absolute;
+	top: 50px;
 }
 
 .intro-text h1 {
@@ -195,11 +204,10 @@ aside {
 	color: #8d8f92;
 }
 
-ul.about-social {
+div.about-social {
 	display: flex;
 	justify-content: space-between;
-	list-style: none;
-	width: 305px;
+	width: 304px;
 }
  
 
@@ -406,8 +414,8 @@ position: relative;
   background: url(images/plus.png) no-repeat;
   z-index: 10;
   position: absolute;
-  top:35%;
-  left: 49%;
+  top: 90px;
+  left: 167px;
 }
 
 .work-item:hover a.hover,
@@ -433,7 +441,15 @@ opacity: 0.4;
 	padding-bottom: 14px;
 	padding-left: 20px;
 	padding-right: 30px;
-	margin-left: 36%;
+	display: block;
+	width: 170px;
+	margin: 0 auto;
+}
+
+.work a.btn:hover {
+	background-color: #23b7a4;
+	border-color: #23b7a4;
+
 }
 
 
@@ -559,10 +575,19 @@ opacity: 0.4;
 	margin-bottom: 60px;
 }
 
-.map {
+.map-responsive {
 	width: 100%;
-	height: 346px;
+	height: 345px;
+	     
 }
+
+.map-responsive iframe{
+   
+    height:100%;
+    width:100%;
+   
+}
+
 
 .info {
 	width: 555px;
@@ -575,6 +600,7 @@ opacity: 0.4;
 	text-transform: uppercase;
 	color: #292f36;
 	padding-left: 10px;
+	margin-top: 55px;
 	margin-bottom: 30px;
 }
 
@@ -586,12 +612,18 @@ color: #8d8f92;
 	margin-bottom: 35px;
 }
 
+
+
+
 /* form */
 
 aside.form {
 	position: absolute;
-	bottom: 180px;
-	left: 600px;
+	bottom: 90px;
+	left: 700px;
+	background-color: #fff;
+	width: 555px;
+	height: 380px;
 
 }
 
@@ -641,6 +673,11 @@ button[type="submit"] {
 	color: #fff;
 
 	margin-top: 30px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color: #1d2126;
 }
 
 .field-flex {
@@ -658,7 +695,7 @@ footer {
 
 .footer-flex {
 	width: 1140px;
-	height: 100%;
+	height: 95px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
