@@ -132,7 +132,6 @@ nav a.active {
 .intro-text p {
 	color: #fff;
 	font-size: 16px;
-	line-height: 26px;
 	margin-bottom: 40px;
 
 }
@@ -919,7 +918,7 @@ font-size: 14px;
        width: 310px;
      }
      h1 {
-     	font-size: 30px;
+     	font-size: 30px !important;
      }
      h2 {
      	font-size: 25px !important;
@@ -927,6 +926,9 @@ font-size: 14px;
      .intro-text {
      	top: 20%;
      	left: 23%
+     }
+     .intro-text p {
+     	font-size: 12px;
      }
      .intro-btn-flex {
      	flex-direction: column;
