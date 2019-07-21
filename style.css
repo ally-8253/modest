@@ -136,6 +136,10 @@ nav a.active {
 	margin-bottom: 40px;
 
 }
+.intro-btn-flex {
+display: flex;
+justify-content: flex-start;
+}
 
 .intro a.btn {
 	text-decoration: none;
@@ -147,7 +151,7 @@ nav a.active {
 	font-size: 14px;
 	line-height: 28px;
 	text-transform: uppercase;
-	padding: 12px 20px;
+	padding: 5px 20px;
 	padding-right: 28px;
 	margin: 0;
 	margin-right: 11px;
@@ -493,7 +497,7 @@ opacity: 0.4;
 
 .service {
 	padding-top: 80px;
-	padding-bottom: 150px;
+	padding-bottom: 140px;
     }
 
 .service h2 {
@@ -508,7 +512,7 @@ opacity: 0.4;
 
 .service-flex {
 	width: 100%;
-	height:510px;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -524,6 +528,7 @@ opacity: 0.4;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+    margin-bottom: 10px;
 }
 
 .service-item-img {
@@ -574,7 +579,7 @@ opacity: 0.4;
 
 .feature-flex {
 	width: 100%;
-	height: 435px;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -808,12 +813,143 @@ font-size: 14px;
 	.container {
 		max-width: 970px;
 	}
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
 	bottom: 100px;
 	text-align: center;
-}
-
-.swiper-pagination {
+    }
+    .swiper-pagination {
     	text-align: center;
     }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    body {
+	   font-size: 14px;
+    } 
+    .container {
+       width: 750px;
+    }
+    h2 {
+	   font-size: 30px;
+    } 
+    .service-item {
+	   margin-top: 20px;
+	   width: 45%;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+      body {
+	    font-size: 14px;
+     } 
+    .container {
+       width: 450px;
+     }
+     nav {
+	   display: none;
+     }
+     .intro-text {
+	    top: 30%;
+	    margin: 0 auto;
+	    width: 50%;
+		   text-align: center;
+     }
+     .intro-btn-flex {
+     	justify-content: center;
+     }
+     h1,
+     .intro-text p{
+	    text-align: center;
+     }
+     .about-flex {
+	    flex-wrap: wrap;
+     }
+     .about-flex > div {
+	    width: 100%;
+	    margin-bottom: 50px;
+     }
+     .about-flex aside {
+	   width: 100%;
+     }
+     .team-flex {
+	   flex-wrap: wrap;
+     }
+     .team-item {
+	   width: 45%;
+	   margin-bottom: 20px;
+     }
+     .work-flex {
+	   flex-wrap: wrap;
+     }
+     .work-item {
+	   width: 45%;
+	   margin-bottom: 20px;
+     }
+     .feature-flex {
+	   flex-wrap: wrap;
+     }
+     .feature-item {
+     width: 100%;
+     margin-bottom: 50px;
+     }
+     .feature-item h3,
+     .feature-item  p {
+     	text-align: center;
+     }
+     .contact .info {
+	   width: 100%;
+	   margin-bottom: 50px;
+     }
+    .contact aside {
+	  position: static;
+	  width: 100%;
+     }
+     form {
+	  padding: 0;
+     }
+}
+
+
+@media screen and (max-width: 479px) {
+     .container {
+       width: 310px;
+     }
+     h2 {
+     	font-size: 25px !important;
+     }
+     .intro-text {
+     	top: 20%;
+     	left: 23%
+     }
+     .intro-btn-flex {
+     	flex-direction: column;
+     	justify-content: space-between;
+     }
+     .intro-btn-flex a {
+     	margin-bottom: 15px !important;
+     }
+     .team-item {
+     	width: 100%;
+     }
+     .work-item {
+     	width: 100%;
+     }
+     .service-item {
+     	width: 100%;
+     }
+     .footer-flex {
+     	flex-wrap: wrap;
+     }
+     footer .copyright {
+     	width: 100%;
+     	text-align: center;
+     }
+     .footer-social {
+     	width: 100%;
+     	justify-content: center;
+     }
 }
