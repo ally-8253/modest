@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
     <title>Modest</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="swiper-master/swiper.min.css">
+    <link rel="stylesheet" href="swiper-master/swiper.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -17,7 +17,7 @@
 			<div class="container">
 				<div class="header-flex">
 		            <div class="logo">
-			    <a href="#"><img src="images/logo.png"></a>
+			    <a href="#"><img src="images/logo.png" alt="Modest"></a>
 		      </div>
 		
 		      <nav>
@@ -38,12 +38,17 @@
 
 	<section class="intro">
 			
-            
-
-<div class="slider">
-  <div class="slide"><img src="images/slide1.jpg"></div>
-  <div class="slide"><img src="images/slide2.jpg"></div>
-  <div class="slide"><img src="images/slide3.jpg"></div>
+      
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" alt="slide1"><img src="images/slide1.jpg"></div>
+        <div class="swiper-slide" alt="slide2"><img src="images/slide2.jpg"></div>
+        <div class="swiper-slide" alt="slide3"><img src="images/slide3.jpg"></div>
+        ...
+    </div>
+    <div class="swiper-pagination"></div>
 </div>
 
 <div class="container">
@@ -80,21 +85,21 @@
 			</div>
 			<aside>
 				<div class="aside-item">
-					<img src="images/01.png">
+					<img src="images/01.png" alt="1">
 					<div class="aside-item-text">
 					<h3>Dedication to the customers</h3>
 					<p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. </p>
 					</div>
 				</div>
 				<div class="aside-item">
-					<img src="images/02.png">
+					<img src="images/02.png" alt="2">
 					<div class="aside-item-text">
 					<h3>Working closely to our client</h3>
 					<p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. </p>
 				</div>
 				</div>
 				<div class="aside-item">
-					<img src="images/03.png">
+					<img src="images/03.png" alt="3">
 					<div class="aside-item-text">
 					<h3>Increase hapiness</h3>
 					<p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. </p>
@@ -120,7 +125,7 @@
 				<a href="#" class="team-item-icon fb"></a>
 				<a href="#" class="team-item-icon in"></a>
 			</div>
-			<img src="images/GB.png">
+			<img src="images/GB.png" alt="Gloria Bromley">
 			<div class="team-item-text">
 			<h3>Gloria Bromley</h3>
 			<p>CEO and Founder</p>
@@ -133,7 +138,7 @@
 				<a href="#" class="team-item-icon fb"></a>
 				<a href="#" class="team-item-icon in"></a>
 			</div>
-			<img src="images/PT.png">
+			<img src="images/PT.png" alt="Paul Torres">
 			<div class="team-item-text">
 			<h3>Paul Torres</h3>
 			<p>Head of Development</p>
@@ -146,7 +151,7 @@
 				<a href="#" class="team-item-icon fb"></a>
 				<a href="#" class="team-item-icon in"></a>
 			</div>
-			<img src="images/JG.png">
+			<img src="images/JG.png" alt="Judith Gilette">
 			<div class="team-item-text">
 			<h3>Judith Gilette</h3>
 			<p>Graphic Designer</p>
@@ -176,7 +181,7 @@
 		<h2>Lovely work.</h2>
         <div class="work-flex">
         	<div class="work-item">
-        		<img src="images/work1.png">
+        		<img src="images/work1.png" alt="Our work">
         			<a href="#" class="hover"></a>
         		  		<div class="work-overlay">
         			<p>Partnership guidlines</p>
@@ -184,7 +189,7 @@
         	</div>
 
         	<div class="work-item">
-        		<img src="images/work2.png">
+        		<img src="images/work2.png" alt="Our work">
         			<a href="#" class="hover"></a>
         		        		<div class="work-overlay">
         			<p>Partnership guidlines</p>
@@ -193,7 +198,7 @@
         	</div>
 
         	<div class="work-item">
-        		<img src="images/work3.png">
+        		<img src="images/work3.png" alt="Our work">
         			<a href="#" class="hover"></a>
         				<div class="work-overlay">
         			<p>Partnership guidlines</p>
@@ -201,7 +206,7 @@
         	</div>
 
         	<div class="work-item">
-        		<img src="images/work4.png">
+        		<img src="images/work4.png" alt="Our work">
         			<a href="#" class="hover"></a>
         		<div class="work-overlay">
         			<p>Partnership guidlines</p>
@@ -209,7 +214,7 @@
         	</div>
 
         	<div class="work-item">
-        		<img src="images/work5.png">
+        		<img src="images/work5.png" alt="Our work">
         			<a href="#" class="hover"></a>
         		        		<div class="work-overlay">
         			<p>Partnership guidlines</p>
@@ -218,7 +223,7 @@
         	</div>
 
         	<div class="work-item">
-        		<img src="images/work6.png">
+        		<img src="images/work6.png" alt="Our work">
         			<a href="#" class="hover"></a>
         		<div class="work-overlay">
         			<p>Partnership guidlines</p>
@@ -238,49 +243,57 @@
         <div class="service-flex">
     		
     	<div class="service-item">
-    		<img src="images/service1.png">
+    		<div class="service-item-img">
+    		<img src="images/service1.png" alt="">
+    		</div>
     		<h3>Easy theme setup</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
-    	</div>
+			    	</div>
 
     	<div class="service-item">
-    		<img src="images/service2.png">
+    		<div class="service-item-img">
+    		<img src="images/service2.png" alt=""></div>
     		<h3>Pixel perfect design</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
     	</div>
 
     	<div class="service-item">
-    		<img src="images/service3.png">
+    		<div class="service-item-img">
+    		<img src="images/service3.png" alt="" style="width: 13%;"></div>
     		<h3>Responsive display</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
     	</div>
 
     	<div class="service-item">
-    		<img src="images/service4.png">
+    		<div class="service-item-img">
+    		<img src="images/service4.png" alt=""></div>
     		<h3>24/7 support</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
     	</div>
 
     	<div class="service-item">
-    		<img src="images/service1.png">
+    		<div class="service-item-img"><img src="images/service1.png" alt=""></div>
     		<h3>Easy theme setup</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
     	</div>
 
     	<div class="service-item">
-    		<img src="images/service2.png">
+    		<div class="service-item-img">
+    		<img src="images/service2.png" alt=""></div>
     		<h3>Pixel perfect design</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
     	</div>
 
     	<div class="service-item">
-    		<img src="images/service3.png">
+    		<div class="service-item-img">
+    		<img src="images/service3.png" alt="" style="width: 13%;"></div>
     		<h3>Responsive display</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
     	</div>
 
     	<div class="service-item">
-    		<img src="images/service4.png">
+    		<div class="service-item-img">
+    		<img src="images/service4.png" alt=""></div>
     		<h3>24/7 support</h3>
 			<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
     	</div>
@@ -294,19 +307,19 @@
     	<h2>Features.</h2>	
     	<div class="feature-flex">
     		<div class="feature-item">
-    			<img src="images/feature1.png">
+    			<img src="images/feature1.png" alt="Our feature">
     			<h3>Product design: Emes Chairs</h3>
 				<p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p>
     		</div>
 
     		<div class="feature-item">
-    			<img src="images/feature2.png">
+    			<img src="images/feature2.png" alt="Our feature">
     			<h3>Elegant and colorful logos</h3>
 				<p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p> 		
 			</div>
 
 			<div class="feature-item">
-    			<img src="images/feature3.png">
+    			<img src="images/feature3.png" alt="Our feature">
     			<h3>A showcase of creative</h3>
 				<p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p> 		
 			</div>
@@ -342,8 +355,8 @@
     			</label>
     			</div>
 
-    			<label for="message">Your message
-                <textarea name="message" id="message">
+    			<label for="message" class="message">Your message
+                <textarea name="message" id="message" rows="10">
 
                 </textarea>
     			</label>
@@ -374,8 +387,20 @@
     	</div>
     </div>
     </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
+
+
+<script src="swiper-master/swiper.min.js"></script>
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },  
+      
+  })
+  </script>
+
 </body>
 </html>
