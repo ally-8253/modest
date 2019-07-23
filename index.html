@@ -20,7 +20,7 @@
 			    <a href="#"><img src="images/logo.png" alt="Modest"></a>
 		      </div>
 		
-		      <nav>
+		      <nav class="main-nav">
 				     <a href="#home" class="btn nav-btn active">Home</a>
 				     <a href="#about" class="btn nav-btn">About</a>
 				     <a href="#work" class="btn nav-btn">Work</a>
@@ -31,16 +31,28 @@
 			   </nav>
 	    
             <div class="menu-hidden">
-            	   <a href="" class="menu-hidden-btn"></a>
-            	   <div>
-            	    <a href="#home" class="btn nav-btn">Home</a>
-				     <a href="#about" class="btn nav-btn">About</a>
-				     <a href="#work" class="btn nav-btn">Work</a>
-				     <a href="#team" class="btn nav-btn">Team</a>
-				     <a href="#service" class="btn nav-btn">Services</a>
-				     <a href="#feature" class="btn nav-btn">Features</a>
-				     <a href="#contact" class="btn nav-btn">Contact</a>
+            	         
+                    
+
+            	   <div class="menu-block">
+                    <a class="menu-hidden-btn"><span class="menu-hidden-btn-lines"></span></a>  
+                    
+                    <nav class="menu-nav menu-nav-active">
+            	    <a href="#home" class="hidden-nav-btn">Home</a>
+				     <a href="#about" class="hidden-nav-btn">About</a>
+				     <a href="#work" class="hidden-nav-btn">Work</a>
+				     <a href="#team" class="hidden-nav-btn">Team</a>
+				     <a href="#service" class="hidden-nav-btn">Services</a>
+				     <a href="#feature" class="hidden-nav-btn">Features</a>
+				     <a href="#contact" class="hidden-nav-btn">Contact</a>
+                     </nav>
+
+                     
+
 				     </div>
+
+
+
             </div>
 
 		    </div>
@@ -56,9 +68,9 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" alt="slide1"><img src="images/slide1.jpg"></div>
-        <div class="swiper-slide" alt="slide2"><img src="images/slide2.jpg"></div>
-        <div class="swiper-slide" alt="slide3"><img src="images/slide3.jpg"></div>
+        <div class="swiper-slide slide1"></div>
+        <div class="swiper-slide slide2"></div>
+        <div class="swiper-slide slide3"></div>
         ...
     </div>
     <div class="swiper-pagination"></div>
@@ -73,9 +85,7 @@
 				<a href="#" class="btn">Video tour</a>
 				</div>
 			</div>
-
-
-		</div>
+</div>
 	</section>
 		
 	
@@ -403,7 +413,8 @@
     </div>
     </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="script.js"></script>
 <script src="swiper-master/swiper.min.js"></script>
 <script>
   var mySwiper = new Swiper ('.swiper-container', {
@@ -416,6 +427,7 @@
       
   })
   </script>
+    
 
 </body>
 </html>
