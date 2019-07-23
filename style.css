@@ -633,7 +633,7 @@ opacity: 0.4;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .service-item-img {
@@ -1019,6 +1019,16 @@ font-size: 14px;
      }
      form {
 	  padding: 0;
+     }
+     .field-flex {
+     	flex-direction: column;
+     	justify-content: center;
+     }
+     form label{
+     	width: 100%;
+     }
+     input[type="text"] {
+     	height: 40px;
      }
 }
 
