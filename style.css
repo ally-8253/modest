@@ -201,7 +201,7 @@ a.nav-btn:hover {
 
 .swiper-container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -225,6 +225,7 @@ background-size: cover;
 	background-color: : #3a454d;
 	width: 100%;
 	height: 100vh;
+	margin-bottom: 10px;
 }
 
 .intro-text {
@@ -232,7 +233,7 @@ background-size: cover;
 	top: 40%;
 	z-index: 20;
 	width: 50%;
-	height: 70%;
+	height: 50%;
 	margin-bottom: 10px;
 }
 
@@ -279,7 +280,7 @@ justify-content: flex-start;
 /* About */
 
 .about {
-	padding-top: 80px;
+	padding-top: 70px;
 	padding-bottom: 100px;
 	border-bottom: 1px solid #dde1e4;
 }
@@ -1069,7 +1070,11 @@ width: 27px;
      .container {
        width: 310px;
      }
-         .intro-text p {
+
+     .intro {
+     	height: 75vh;
+     }
+     .intro-text p {     
     	font-size: 12px;
     	margin-bottom: 10px;
     }
@@ -1111,4 +1116,12 @@ width: 27px;
      	width: 100%;
      	justify-content: center;
      }
+}
+
+@media screen and (max-width: 320px) {
+	.intro-text {
+     	top: 15%;
+     }
+
+     
 }
