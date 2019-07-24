@@ -162,7 +162,7 @@ nav {
 	justify-content: flex-end;
     	}
 
-a.nav-btn {
+.nav-btn {
 	text-decoration: none;
 	color: #5b6168;
 	font-size: 14px;
@@ -183,10 +183,16 @@ a.nav-btn:hover {
 	border-radius: 6px;
 }
 
-nav a.active {
+.nav-btn-active {
 	border: solid 3px #23b7a4;
 	border-radius: 6px;
 	color: #23b7a4;
+	margin-right: 10px;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 6px 10px;
 }
 
 /* intro */
