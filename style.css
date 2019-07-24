@@ -207,15 +207,15 @@ a.nav-btn:hover {
 
 
 .swiper-container div.slide1 {
-background: url("images/slide1.jpg") no-repeat center bottom;
+background: url("images/slide1.jpg") no-repeat center center;
 }
 
 .swiper-container div.slide2 {
-background: url("images/slide2.jpg") no-repeat right bottom;
+background: url("images/slide2.jpg") no-repeat right center;
 }
 
 .swiper-container div.slide3 {
-background: url("images/slide3.jpg") no-repeat left bottom;
+background: url("images/slide3.jpg") no-repeat left center;
 }
 
 .intro {
