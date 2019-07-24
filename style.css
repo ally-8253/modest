@@ -1105,8 +1105,8 @@ width: 27px;
      	width: 100%;
      }
      .footer-flex {
+
      	flex-wrap: wrap;
-     	margin: 10px 0;
      }
      footer .copyright {
      	width: 100%;
