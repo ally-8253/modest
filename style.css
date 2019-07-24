@@ -1079,7 +1079,6 @@ width: 27px;
      }
      .footer-flex {
      	flex-wrap: wrap;
-     	flex-direction: column;
      }
      footer .copyright {
      	width: 100%;
