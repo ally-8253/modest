@@ -216,7 +216,7 @@ background: url("images/slide1.jpg") no-repeat center bottom;
 }
 
 .swiper-container div.slide2 {
-background: url("images/slide2.jpg") no-repeat right top;
+background: url("images/slide2.jpg") no-repeat right bottom;
 }
 
 .swiper-container div.slide3 {
