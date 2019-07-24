@@ -204,12 +204,7 @@ a.nav-btn:hover {
     height: 100vh;
 }
 
-.swiper-container div.swiper-slide{
--webkit-background-size: cover;
-   -moz-background-size: cover;
-     -o-background-size: cover;
-        background-size: cover;
- }
+
 
 .swiper-container div.slide1 {
 background: url("images/slide1.jpg") no-repeat center bottom;
@@ -891,36 +886,43 @@ font-size: 14px;
 	flex-direction: row;
 	justify-content: flex-end;
 	width: 50%;
+	align-items: center;
 }
 
-.footer-social a {
- 	display: block;
-	width: 25px;
-    height: 25px;
-    margin-right: 5px;
+.footer-social ul {
+	width: 170px;
+	background: url(images/footer-social.png) no-repeat;
+	list-style: none;
+	}
+
+.footer-social ul li {
+	list-style: none;
+	display: inline-block;
+	width: 22px;
+	height: 20px;
+	margin-right: 5px;
 }
 
-.footer-social a.tw {
-	background: #3a454d url('images/social-tw.png') no-repeat 50% 50%;
+.footer-social ul li.sk {
+	margin-right: 10px;
 }
 
-.footer-social a.fb {
-	background: #3a454d url('images/social-fb.png') no-repeat 50% 50%;
+.footer-social ul li.be{
+ 	width: 27px;
+ 	
+ }
+
+.footer-social ul li.in {
+width: 27px;
 }
 
-.footer-social a.sk {
-	background: #3a454d url('images/social-sk.png') no-repeat 50% 50%;
+.footer-social ul li a {
+	
+	display: block;
+	width: 100%;
+	height: 100%;
+
 }
-
-.footer-social a.be {
-	background: #3a454d url('images/social-be.png') no-repeat 50% 50%;
-}
-
-
- .footer-social a.in {
-	background: #3a454d url('images/social-in.png') no-repeat 50% 50%;
-}
-
 
 @media screen and (max-width: 1200px) {
 	.container {
@@ -1077,6 +1079,7 @@ font-size: 14px;
      }
      .footer-flex {
      	flex-wrap: wrap;
+     	flex-direction: column;
      }
      footer .copyright {
      	width: 100%;
