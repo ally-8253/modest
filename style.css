@@ -207,15 +207,18 @@ a.nav-btn:hover {
 
 
 .swiper-container div.slide1 {
-background: url("images/slide1.jpg") no-repeat center center;
+background: url("images/slide1.jpg") no-repeat left bottom;
+background-size: cover;
 }
 
 .swiper-container div.slide2 {
-background: url("images/slide2.jpg") no-repeat right center;
+background: url("images/slide2.jpg") no-repeat right top;
+background-size: cover;
 }
 
 .swiper-container div.slide3 {
-background: url("images/slide3.jpg") no-repeat left center;
+background: url("images/slide3.jpg") no-repeat -200px bottom;
+background-size: cover;
 }
 
 .intro {
@@ -229,6 +232,8 @@ background: url("images/slide3.jpg") no-repeat left center;
 	top: 40%;
 	z-index: 20;
 	width: 50%;
+	height: 70%;
+	margin-bottom: 10px;
 }
 
 .intro-text h1 {
@@ -258,9 +263,8 @@ justify-content: flex-start;
 	border-radius: 5px;
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 14px;
-	line-height: 28px;
 	text-transform: uppercase;
-	padding: 5px 20px;
+	padding: 10px 20px;
 	margin: 0;
 	margin-right: 11px;
 }
@@ -977,8 +981,18 @@ width: 27px;
 	    margin: 0 auto;
 		text-align: center;
      }
+     h1 {
+     	font-size: 1.5em !important;
+     }
      .intro-btn-flex {
      	justify-content: center;
+     	height: 25%;
+     	width: 80%;
+     	margin: 0 auto;
+     	margin-top: 10px;
+     }
+     .intro-btn-flex a {
+     	height: 50px;
      }
      h1,
      .intro-text p{
@@ -1042,30 +1056,38 @@ width: 27px;
      }
 }
 
+@media screen and (max-width: 690px) {
+	
+	.intro a.btn {
+    	font-size: 12px;
+    }
+}
+
+
 
 @media screen and (max-width: 479px) {
      .container {
        width: 310px;
      }
-     h1 {
-     	font-size: 25px !important;
-     }
+         .intro-text p {
+    	font-size: 12px;
+    	margin-bottom: 10px;
+    }
+
      h2 {
      	font-size: 20px !important;
      }
            .intro-text {
-     	top: 25%;
+     	top: 20%;
      }
-     .intro-text p {
-     	font-size: 12px;
-     }
+     
      .intro-btn-flex {
      	flex-direction: column;
      	justify-content: space-between;
      	
      }
      .intro-btn-flex a {
-     	margin-bottom: 15px !important;
+     	margin-bottom: 10px !important;
      	margin-right: 0 !important;
      }
      .team-item {
