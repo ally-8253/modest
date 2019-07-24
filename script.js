@@ -4,6 +4,7 @@ $('.menu-hidden-btn').on('click', function(e) {
   $('.menu-nav').toggleClass('menu-nav-active');
 });
 
+
 const anchors = document.querySelectorAll('nav a[href*="#"]');
 
 for (let anchor of anchors) {
@@ -34,20 +35,19 @@ for (let anchor of anchors) {
   });
 }
 
-let sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll("section");
 
-document.addEventListener('scroll', () => {
-  sections.foreach(section => {
-     if (
-  section.getBoundingClientRect().top < window.clientHeight / 3
-  ) {
-  for (let link of anchors) {
-          if (link.getAttribute("href") === section.id) {
-             link.className = "nav-btn-active";
-          } else {
-             link.className = "nav-btn";
-          }
-        }  
+document.addEventListener("scroll", function() {
+  sections.forEach(section => {
+    if (section.getBoundingClientRect().top <= screen.availTop + 200) {
+      for (let link of anchors) {
+        console.log(link.href.split("#").pop() === section.id);
+        if (link.href.split("#").pop() === section.id) {
+          link.className = "nav-btn-active";
+        } else {
+          link.className = "nav-btn";
+        }
       }
-  })
+    }
+  });
 });
