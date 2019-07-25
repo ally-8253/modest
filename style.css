@@ -801,6 +801,7 @@ form {
 	width: 100%;
 	height: auto;
 	padding: 20px 30px 0 30px;
+
 }
 
 .field-flex {
@@ -824,6 +825,8 @@ input[type="text"] {
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 25px;
+	padding: 0 10px;
+	font-size: 14px;
 	background-color: #eaeef1;
 	border: none;
 	}
@@ -839,7 +842,8 @@ textarea {
 	background-color: #eaeef1;
 	border: none;
 	width: 100%;
-	
+	padding: 10px 10px;
+	font-size: 14px;
 }
 
 button[type="submit"] {
