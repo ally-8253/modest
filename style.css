@@ -202,18 +202,23 @@ a.nav-btn:hover {
 .swiper-container {
     width: 100%;
     height: 100%;
-    position: relative;
-    overflow: hidden;
 }
 
 
 
-.swiper-slide {
-	background-position: center center;
-	background-size: cover;
-	
-	height: 100%;
+.swiper-container div.slide1 {
+background: url("images/slide1.jpg") no-repeat left bottom;
+background-size: cover;
+}
 
+.swiper-container div.slide2 {
+background: url("images/slide2.jpg") no-repeat right top;
+background-size: cover;
+}
+
+.swiper-container div.slide3 {
+background: url("images/slide3.jpg") no-repeat -200px bottom;
+background-size: cover;
 }
 
 .intro {
