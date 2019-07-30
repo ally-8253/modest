@@ -62,23 +62,27 @@ header {
 
 .menu-hidden {
 	display: none;
-	width: 100px;
+	width: 150px;
 	height: auto;
 	align-self: flex-start;
 	margin-top: 15px;
 	}
 
 .menu-block {
-	width: 120px;
-		height: auto;
+	width: 150px;
+	height: auto;
 }
 
 .hidden-nav-btn {
 	display: block;
 	text-decoration: none;
+	padding: 5px;
+	margin-top: 10px;
 	color: #fff;
-	margin-bottom: 10px;
-	padding: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	
 }
 
 .hidden-nav-btn:hover {
@@ -114,7 +118,7 @@ width: 50px;
 height: 50px;
 border-radius: 50%;
 background: #23b7a4;
-right: -50px;
+right: -80px;
 position: relative;
 }
 
@@ -158,6 +162,8 @@ span.menu-hidden-btn-lines::after {
 	height: 0;
 }
 
+/* main menu */
+
 nav {
 	width: 87%;
 	display: flex;
@@ -196,6 +202,11 @@ a.nav-btn:hover {
 	font-weight: 600;
 	padding: 6px 10px;
 }
+
+.nav-btn-active:last-of-type {
+	margin-right: 0;
+}
+
 
 /* intro */
 
@@ -979,6 +990,36 @@ width: 27px;
      }
      .menu-hidden {
      	display: block;
+}
+
+.nav-btn-active{
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	margin-top: 10px;
+	color: #23b7a4;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: none;
+	margin-right: 0;
+
+}
+
+.nav-btn {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: none;
+	margin-right: 0;
+}
+
+a.nav-btn:hover {
+	border: none;
+	color: #5b6168;
 }
      .intro-text {
 	    top: 30%;
